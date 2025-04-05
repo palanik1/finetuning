@@ -88,8 +88,9 @@ training_args = TrainingArguments(
     max_grad_norm = 0.3,
     warmup_ration = 0.03,
     lr_scheduler_type = "constant",
-    push_to_hub = True,
-    report_to = "TensorBoard"
+    push_to_hub = False,
+    report_to = "tensorboard",
+    remove_unused_columns=False
   )                     
 
 trainer = SFTTrainer(

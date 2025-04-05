@@ -1,8 +1,16 @@
-#torch
-transformers
-datasets
-accelerate
-evaluate
-bitsandbytes
-trl
-peft
+torch==2.6.0
+torchvision==0.21.0
+torchaudio==2.6.0
+tensorboard==2.19.0
+transformers==4.36.2
+datasets==3.5.0
+accelerate==0.28.0
+evaluate==0.4.3
+bitsandbytes==0.45.4
+trl @ git+https://github.com/huggingface/trl@a3c5b7178ac4f65569975efadc97db2f3749c65e 
+peft @ git+https://github.com/huggingface/peft@4a1559582281fc3c9283892caea8ccef1d6f5a4f 
+tqdm==4.67.1
+tokenizers==0.15.2
+
+#pip install git+https://github.com/huggingface/trl@a3c5b7178ac4f65569975efadc97db2f3749c65e --upgrade
+#!pip install git+https://github.com/huggingface/peft@4a1559582281fc3c9283892caea8ccef1d6f5a4f --upgrade
