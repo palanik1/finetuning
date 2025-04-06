@@ -70,6 +70,6 @@ success_rate = []
 num_eval_samples = 1000
 for sample in tqdm(eval_dataset.shuffle().select(range(num_eval_samples))):
     success_rate.append(evaluate(sample))
-accuracy = sum(success_rate/len(success_rate)
-               )
+accuracy = sum(success_rate)/len(success_rate)
+               
 print(f"Accuracy: {accuracy}")
