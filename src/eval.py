@@ -27,7 +27,7 @@ tokenizer.padding_side = 'right' # to prevent warnings
 
 # # set chat template to OAI chatML, remove if you start from a fine-tuned model
 base_model, tokenizer = setup_chat_format(base_model, tokenizer)
-                                                                                                                           1,12          To
+                        
 peft_model_path = "code-llama-7b-text-to-sql"
 #code-llama-7b-text-to-sql
 
